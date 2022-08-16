@@ -36,7 +36,7 @@ export default {
   <h1>Categoria</h1>
   <hr />
   <div class="form">
-    <input type="text" v-model="categoria.descricao" placeholder="Descrição" />
+    <input @keydown.enter="salvar" v-model="categoria.descricao" placeholder="Descrição" />
     <button @click="salvar">Salvar</button>
   </div>
   <hr />
